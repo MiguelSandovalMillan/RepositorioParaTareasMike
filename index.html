@@ -6,7 +6,7 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="MIguel Sandoval, Juan Carrillo, Aldo Hernandez y Rosendo Hernandez">
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-39d1eab08b8faec97b8adc39508066ea.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-0c8acc74dca0c2faaedea4940f202713.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -122,7 +122,7 @@
     }
   </style>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
@@ -137,25 +137,32 @@ MIguel Sandoval, Juan Carrillo, Aldo Hernandez y Rosendo Hernandez
 </div>
 </div>
 
+</section><section id="TOC">
+<nav role="doc-toc"> 
+<h2 id="toc-title">Table of contents</h2>
+<ul>
+<li><a href="#/introducción-a-las-tarjetas-de-crédito" id="/toc-introducción-a-las-tarjetas-de-crédito">Introducción a las Tarjetas de Crédito</a></li>
+<li><a href="#/qué-es-el-pago-mínimo" id="/toc-qué-es-el-pago-mínimo">¿Qué es el Pago Mínimo?</a></li>
+</ul>
+</nav>
 </section>
-<section id="agenda" class="slide level2">
-<h2>Agenda</h2>
-<ol type="1">
-<li>Introducción {.fragment}</li>
-<li>Metodología {.fragment}</li>
-<li>Resultados {.fragment}</li>
-<li>Conclusiones {.fragment}</li>
-</ol>
+<section id="introducción-a-las-tarjetas-de-crédito" class="slide level2">
+<h2>Introducción a las Tarjetas de Crédito</h2>
+<ul>
+<li>Instrumento financiero de crédito revolving</li>
+<li>Límite de crédito establecido por el emisor</li>
+<li>Facilidad de acceso vs.&nbsp;costo financiero</li>
+</ul>
 </section>
-<section id="análisis-exploratorio" class="slide level2">
-<h2>Análisis Exploratorio</h2>
-<p>#| echo: true library(ggplot2) ggplot(mtcars, aes(x = mpg, y = hp)) + geom_point() + geom_smooth(method = “lm”)</p>
+<section id="qué-es-el-pago-mínimo" class="slide level2">
+<h2>¿Qué es el Pago Mínimo?</h2>
+<p><strong>Definición:</strong> - Porcentaje pequeño del saldo total (2-5%) - Incluye intereses + comisiones + pequeña parte del capital - Mantiene la cuenta al corriente pero extiende la deuda</p>
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Presentación HTML - 2024</p>
+
 </div>
 </div></div>
 
@@ -172,6 +179,7 @@ MIguel Sandoval, Juan Carrillo, Aldo Hernandez y Rosendo Hernandez
   <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
   <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
   <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -339,9 +347,27 @@ MIguel Sandoval, Juan Carrillo, Aldo Hernandez y Rosendo Hernandez
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
+          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

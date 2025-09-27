@@ -1,27 +1,32 @@
 ---
 title: "Tarjetas de Credito y Pago minimo"
 author: "MIguel Sandoval, Juan Carrillo, Aldo Hernandez y Rosendo Hernandez"
-format: 
+format:
   revealjs:
-    theme: "sky"
+    theme: "moon"
     transition: "slide"
     slide-number: true
-    footer: "Presentación HTML - 2024"
-    html-math-method: katex
+    toc: true
+  pdf:
+    documentclass: article
+    toc: true
+    toc-depth: 2
+execute:
+  echo: true
+  warning: false
+  message: false
 ---
 
-## Agenda
+## Introducción a las Tarjetas de Crédito
 
-1. Introducción {.fragment}
-2. Metodología {.fragment}
-3. Resultados {.fragment}
-4. Conclusiones {.fragment}
+- Instrumento financiero de crédito revolving
+- Límite de crédito establecido por el emisor
+- Facilidad de acceso vs. costo financiero
 
-## Análisis Exploratorio
+## ¿Qué es el Pago Mínimo?
 
-```{r}
-#| echo: true
-library(ggplot2)
-ggplot(mtcars, aes(x = mpg, y = hp)) +
-  geom_point() +
-  geom_smooth(method = "lm")
+**Definición:** 
+- Porcentaje pequeño del saldo total (2-5%)
+- Incluye intereses + comisiones + pequeña parte del capital
+- Mantiene la cuenta al corriente pero extiende la deuda
+
