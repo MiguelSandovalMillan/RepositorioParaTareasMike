@@ -2,10 +2,12 @@
 title: "Tarjetas de Credito y Pago minimo"
 author: "MIguel Sandoval, Juan Carrillo, Aldo Hernandez y Rosendo Hernandez"
 format: 
- revealjs:
-    theme: sky
-    transition: slide
-    highlight-style: github
+  revealjs:
+    theme: "sky"
+    transition: "slide"
+    slide-number: true
+    footer: "Presentación HTML - 2024"
+    html-math-method: katex
 ---
 
 ## Agenda
