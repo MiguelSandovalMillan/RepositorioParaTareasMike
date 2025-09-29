@@ -1,32 +1,107 @@
 ---
 title: "Tarjetas de Credito y Pago minimo"
 author: "MIguel Sandoval, Juan Carrillo, Aldo Hernandez y Rosendo Hernandez"
+params:
+  universidad: "Universidad Michoacana de San Nicolas de Hidalgo"
+  correos:
+    - "2408819j@umich.mx - Miguel Sandoval Millan"
+    - "2408812d@umich.mx - Juan Carrillo Salazar"
+    - "2405155c@umich.mx - Aldo Hernandez Perez"
+    - "2350465c@umich.mx - Rosendo Hernandez Arias"
 format:
-  revealjs:
-    theme: "moon"
-    transition: "slide"
-    slide-number: true
-    toc: true
-  pdf:
-    documentclass: article
-    toc: true
-    toc-depth: 2
-execute:
-  echo: true
-  warning: false
-  message: false
+  pdf: default
+toc: false
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
 
-## Introducción a las Tarjetas de Crédito
+**Universidad:** `r params$universidad`
 
-- Instrumento financiero de crédito revolving
-- Límite de crédito establecido por el emisor
-- Facilidad de acceso vs. costo financiero
+**Correos electrónicos:**
 
-## ¿Qué es el Pago Mínimo?
+`r paste("-", params$correos, collapse = "\n")`
 
-**Definición:** 
-- Porcentaje pequeño del saldo total (2-5%)
-- Incluye intereses + comisiones + pequeña parte del capital
-- Mantiene la cuenta al corriente pero extiende la deuda
+\newpage
 
+## Introducción a las Tarjetas de Crédito💳
+
+La tarjeta de crédito es un instrumento financiero que consiste en una tarjeta de plástico con un microchip en la parte trasera, mediante la misma el banco otorga a sus clientes una línea de crédito por una cierta cantidad. Las tarjetas de crédito en México surgen cuando el Banco Nacional de México decide lanzar al mercado una tarjeta de crédito en 1968.
+
+## Cuota de manejo🪙
+
+La cuota de manejo es un monto que se cobra periódicamente por el uso y administración de la tarjeta, se trata de una tarifa fija que aplica el banco por distintos servicios que el mismo te pueda proveer, según la tarjeta que tengas. En la mayoría de los casos se cobra de manera mensual, pero esto puede variar por la institución bancaria. Aunque existen tarjetas que promocionan exenciones temporales o condiciones especiales,  el cobro de cuota de manejo es un estándar en la industria bancaria.
+
+## Comisiones🧾
+
+Todas las tarjetas de crédito cuentan con un apartado de comisiones, estas son cargos que el banco o institución financiera aplica por la administración de la tarjeta, el uso de sus servicios, o por transacciones específicas. Las más comunes son la comisión anual o de administración para cubrir los costos de la tarjeta y sus beneficios, la comisión por disposición de efectivo al retirar dinero y la comisión por pago tardío, pero también existen otras como la de emisión, mantenimiento o por transferencia de saldo.
+
+## Limite de Credito❗ {.scrollable}
+
+Un límite de crédito es el monto máximo de dinero que un prestamista (como un banco o una institución financiera) te otorga para usar en una cuenta de crédito. Como una linea de crédito se basa en tu historial y capacidad de pago, y se incrementa a medida que realizas compras.
+
+Las instituciones financieras evalúan varios factores para determinar tu límite de crédito como: 
+
+➡Historial crediticio  
+Es el registro detallado de como a manejado sus obligaciones financieras, prestamos o hipotecas
+
+➡Nivel de ingresos   
+Indica la capacitad de ingresos de una persona o entidad en un periodo determinado
+
+## Fecha de Corte📆
+
+Es el día en que el banco finaliza un ciclo de facturación y genera el estado de cuenta, acumulando todas las compras y transacciones realizadas hasta esa fecha.  
+
+Todas las operaciones realizadas después de la fecha de corte se registrarán en el día siguiente de la fecha de corte y marca el final de un período de aproximadamente 30 días de uso de la tarjeta. 
+
+
+## Pago Total de la Tarjeta⚖️
+
+El monto total que debes pagar antes de la fecha límite para evitar cargos por intereses , con esto evitar el cobro de intereses ordinarios. Al liquidar este saldo completo, tus compras se cancelan y no se genera ningún interés sobre el gasto del periodo. Es la mejor práctica para usar tu tarjeta y mantener una buena salud financiera, según sea la banca de tu agrado.  
+
+🟢Beneficios:
+ 
+➡Evitas pagar intereses por tus compras.   
+➡Mantienes el saldo de tu tarjeta en cero, como si hubieras usado efectivo.  
+➡Construyes un buen historial crediticio.  
+
+## Pago Minimo📉 {.scrollable}
+
+
+Cuando no se puede pagar el saldo total en la fecha límite de pago, entonces deberá realizar cuando menos el pago mínimo.   
+
+
+El pago mínimo es la cantidad más pequeña que se paga por un adeudo que se tenga en tarjeta de crédito.  
+Pero el pago mínimo y el pago para no generar intereses son conceptos distintos:  
+
++ ***Pago Mínimo***💸  
+Es el requisito mínimo para evitar multas y reportes negativos, pero SÍ genera intereses sobre el saldo restante.  
+
++ ***Pago para NO Generar Intereses***💰  
+Si pagas el saldo total que aparece en tu estado de cuenta antes de la fecha límite, la institución financiera no te cobrará ningún interés. Esta es la manera más inteligente y económica de utilizar una tarjeta de crédito.
+
+
+## Intereses💹 {.scrollable}
+
+Los intereses son el costo que pagas al banco o institución financiera cuando no liquidas el total de tu deuda en la fecha de corte o límite de pago.  
+
+Las tarjetas de credito utilizan una tasa de interes anual, y normalmente en  pero en la mayoria de los casos se divide esta tasa para cobrar de manera mensual o incluso diaria.  
+
+Tipos de interés en tarjetas de crédito:
+
++ ***Intereses ordinarios***  
+Los intereses ordinarios se generan cuando no pagas el total de tu saldo despues de la fecha de corte.
+
++ ***Intereses moratorios***  
+Los intereses moratorios son una penalización por no realizar tu pago a tiempo y por no realizar tu pago minimo en la fecha limite de pago; estos son más altos que los ordinarios y se aplican a los saldos vencidos desde el momento del retraso.
+Estos llegan a afectar tu historial acrediticio.
+
+## Costo Anual Total💲 {.scrollable}
+
+Es un porcentaje que representa el costo total de un crédito al incluir todos los intereses, comisiones y gastos asociados durante un año. Este indicador, creado por el Banco de México para fines informativos, permite comparar de manera estandarizada los productos crediticios y saber cuál de ellos genera un menor o mayor costo financiero para el consumidor.  
+
++ ***Componentes del CAT***
+
+➡Tasa de interes  
+➡Comisiones  
+➡Otros cargos  
